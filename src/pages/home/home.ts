@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { LabOnePage } from '../lab-one/lab-one';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,7 @@ export class HomePage {
 
   }
 
+  navigateTo(){
+    this.navCtrl.push(LabOnePage)
+  }
 }
